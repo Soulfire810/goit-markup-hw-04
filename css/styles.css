@@ -20,6 +20,7 @@ html {
     --footer-background-color: #2F303A;
     --footer-email-color: rgba(255, 255, 255, 0.6);
     --icon-color: #afb1b8;
+    --bg-icon-color: rgba(255, 255, 255, 0.1);
 }
 
 /* Загальні параметри */
@@ -151,7 +152,7 @@ body {
     padding-bottom: 200px;
 }
 .overlay {
-    height: 600px;
+    min-height: 600px;
     max-width: 1600px;
     margin-left: auto;
     margin-right: auto;    
@@ -159,7 +160,7 @@ body {
     linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4) ),
     url(../img/backgroundhero.jpg);
     background-repeat: no-repeat;
-    block-size: cover;
+    background-size: cover;
     background-position: center;
 }
 
@@ -534,7 +535,7 @@ body {
 }
 
 .footer-social .link {
-    background-color: var(--primary-color);
+    background-color: var(--bg-icon-color);
     fill: var(--full-white-color);
 }
 
